@@ -24,15 +24,15 @@ console.log(
     .map((l) => `${Object.keys(l.route.methods).join(",").toUpperCase()} ${l.route.path}`)
 );
 
-
 app.use("/api/borrowers", require("./routes/borrowers"));
-app.use("/api/users", require("./routes/users"));
 
 // Tehtävä 21 reitit 
 app.use("/api/students", require("./routes/students"));
 app.use("/api/courses", require("./routes/courses"));
 app.use("/api/grades", require("./routes/grades"));
 
+// Thehtävä 22 reitit
+app.use("/api/users", require("./routes/users"));
 
 // Error handler
 
