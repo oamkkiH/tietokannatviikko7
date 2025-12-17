@@ -1,5 +1,5 @@
 
-// Lataa .env-tiedoston arvot process.env-muuttujiin.
+// .env-tiedoston arvot process.env-muuttujiin.
 require("dotenv").config();
 
 const db = require("./db");
