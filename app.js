@@ -28,6 +28,12 @@ console.log(
 app.use("/api/borrowers", require("./routes/borrowers"));
 app.use("/api/users", require("./routes/users"));
 
+// Tehtävä 21 reitit 
+app.use("/api/students", require("./routes/students"));
+app.use("/api/courses", require("./routes/courses"));
+app.use("/api/grades", require("./routes/grades"));
+
+
 // Error handler
 
 app.use((err, req, res, next) => {
